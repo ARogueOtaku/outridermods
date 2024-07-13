@@ -34,7 +34,7 @@ const modColumns: TableColumn<Mod>[] = [
       <>
         <label
           htmlFor={`fav-${mod.id}`}
-          className="hidden"
+          className="inline-block h-0 w-0 overflow-hidden"
         >{`${mod.isFavorite ? "Remove" : "Mark"} ${mod.name} as favorite`}</label>
         <input
           id={`fav-${mod.id}`}
