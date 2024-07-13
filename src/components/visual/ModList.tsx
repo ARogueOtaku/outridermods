@@ -31,11 +31,18 @@ const modColumns: TableColumn<Mod>[] = [
     label: "Favorite",
     dataKey: "",
     customRender: (mod) => (
-      <input
-        type="checkbox"
-        checked={!!mod.isFavorite}
-        onChange={() => toggleFavorite(mod.id)}
-      />
+      <>
+        <label
+          htmlFor={`fav-${mod.id}`}
+          className="hidden"
+        >{`${mod.isFavorite ? "Remove" : "Mark"} ${mod.name} as favorite`}</label>
+        <input
+          id={`fav-${mod.id}`}
+          type="checkbox"
+          checked={!!mod.isFavorite}
+          onChange={() => toggleFavorite(mod.id)}
+        />
+      </>
     ),
   },
 ];

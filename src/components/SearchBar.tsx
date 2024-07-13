@@ -6,7 +6,7 @@ import Icon from "@/components/visual/Icon";
 const SearchLabel = () => {
   return (
     <>
-      <Icon src={searchIcon} size={12} className="mt-0.5" />
+      <Icon src={searchIcon} size={12} className="mt-0.5" alt="Search Icon" />
       <span>Search</span>
     </>
   );
