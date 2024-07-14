@@ -4,7 +4,15 @@ import plugin from "tailwindcss/plugin";
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      zIndex: {
+        "max": "9999"
+      },
+      padding: {
+        "0.25": "1px",
+        "0.75": "3px",
+      }
+    },
   },
   plugins: [
     plugin(({ addUtilities }) => {

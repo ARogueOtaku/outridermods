@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { initStore } from "@/store/actions.ts";
+import { initStore } from "@/store/methods";
 import "@/index.css";
 import App from "@/App";
 

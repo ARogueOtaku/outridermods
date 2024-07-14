@@ -1,5 +1,5 @@
 import Table, { TableColumn } from "@/components/visual/Table";
-import { toggleFavorite } from "@/store/actions";
+import { toggleFavorite } from "@/store/methods";
 import { Mod } from "@/types";
 import modColors from "@/utils/modcolors";
 
@@ -54,11 +54,11 @@ const ModList = ({ mods }: ModListProps) => {
       rows={mods}
       rowKey={(row) => row.id}
       className="w-full"
-      headerCellClassName="p-2 bg-slate-700 text-slate-100 sticky top-0 border-t-0 border border-slate-700"
+      headerCellClassName="sticky top-0 border border-t-0 border-slate-700 bg-slate-700 p-2 text-slate-100"
       rowCellClassName={(row) =>
-        "px-2 border border-slate-700 " + getModColors(row)
+        "border border-slate-700 px-2 " + getModColors(row)
       }
-      emptyRowCellClassName="text-center py-3"
+      emptyRowCellClassName="py-3 text-center"
     />
   );
 };

@@ -2,21 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-.modlist-scroll::-webkit-scrollbar {
+.custom-scroll::-webkit-scrollbar {
   @apply h-1 w-1;
 }
-.modlist-scroll::-webkit-scrollbar-track {
+.custom-scroll::-webkit-scrollbar-track {
   @apply rounded-none bg-slate-200 bg-opacity-10;
 }
 
-.modlist-scroll::-webkit-scrollbar-track:hover {
+.custom-scroll::-webkit-scrollbar-track:hover {
   @apply bg-opacity-100;
 }
 
-.modlist-scroll::-webkit-scrollbar-thumb {
+.custom-scroll::-webkit-scrollbar-thumb {
   @apply rounded-none bg-slate-700 bg-opacity-100;
 }
 
-.modlist-scroll::-webkit-scrollbar-thumb:active {
+.custom-scroll::-webkit-scrollbar-thumb:active {
   @apply bg-opacity-70;
 }

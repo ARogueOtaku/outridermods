@@ -1,7 +1,8 @@
 import SearchInput from "@/components/visual/Search";
-import { setSearchInput } from "@/store/actions";
+import { setSearchInput } from "@/store/methods";
 import searchIcon from "@/assets/search.svg";
 import Icon from "@/components/visual/Icon";
+import FilterButton from "@/components/FilterButton";
 
 const SearchLabel = () => {
   return (
@@ -22,6 +23,7 @@ const SearchBar = () => {
         searchOnTypeDelay={500}
         label={<SearchLabel />}
       />
+      <FilterButton />
     </div>
   );
 };

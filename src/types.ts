@@ -15,7 +15,6 @@ export type Mod = {
 };
 
 export type ModFilter = {
-  search: string;
   type: ModType[];
   tier: ModTier[];
   class: ModClass[];
@@ -25,5 +24,6 @@ export type AppState = {
   loading: boolean;
   mods: Mod[];
   favorites: Set<Mod["id"]>;
+  search: string;
   filter: ModFilter;
 };

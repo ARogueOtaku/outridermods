@@ -7,9 +7,9 @@ const initialAppState: AppState = {
   loading: false,
   favorites: new Set(),
   mods: [],
+  search: "",
   filter: {
     class: [],
-    search: "",
     tier: [],
     type: [],
   },

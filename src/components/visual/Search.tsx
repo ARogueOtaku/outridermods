@@ -36,7 +36,7 @@ const SearchInput = ({
     <div className="flex flex-1 border border-slate-700">
       <label
         htmlFor="search"
-        className="flex items-center justify-center gap-1 border-r border-slate-700 p-1 px-2"
+        className="flex items-center justify-center gap-1 p-1 px-2"
       >
         {label}
       </label>

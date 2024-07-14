@@ -1,4 +1,4 @@
-import { Mod } from "../types";
+import { Mod, ModFilter } from "../types";
 import useModStore from "./state";
 const { setState, getState } = useModStore;
 
@@ -37,7 +37,13 @@ export const toggleFavorite = (id: string) => {
 };
 
 export const setSearchInput = (newInput: string) => {
-  setState(({ filter: existingFilter }) => ({
-    filter: { ...existingFilter, search: newInput },
+  setState(() => ({
+    search: newInput,
+  }));
+};
+
+export const setModFilter = (newFilter: ModFilter) => {
+  setState(() => ({
+    filter: newFilter,
   }));
 };
