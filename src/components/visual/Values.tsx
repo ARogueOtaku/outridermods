@@ -68,8 +68,9 @@ const Values = <T,>({
           <option value="default" disabled hidden>
             {defaultOptionLabel}
           </option>
-          {options.map((option) => (
+          {options.map((option, idx) => (
             <option
+              key={idx}
               value={valueId?.(option) ?? option + ""}
               disabled={selectedKeys.has(valueId?.(option) ?? option + "")}
               className={optionClassName}
